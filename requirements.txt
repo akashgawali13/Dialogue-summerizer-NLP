@@ -1,0 +1,6 @@
+transformers
+sentence-transformers
+nltk
+spacy
+fpdf
+streamlit
