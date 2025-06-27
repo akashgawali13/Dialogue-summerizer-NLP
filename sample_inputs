@@ -1,0 +1,38 @@
+Emma: Good morning everyone. Let’s start with updates on the onboarding module.
+Liam: Sure. We’ve completed the walkthrough flow for new users, but the welcome email logic still needs testing.
+Sophia: I tested it last night—emails are firing but the template has alignment issues.
+Olivia: I’ll ask the design team to review the email template today.
+Emma: Great. Please prioritize it so we can push it to staging by tomorrow.
+Noah: Speaking of staging, the backup service failed during last night’s run. I’ll investigate and share a report by noon.
+Liam: Was any data lost?
+Noah: No, but we need to double-check the auto-recovery mechanism.
+Sophia: I’ll coordinate with DevOps on that.
+Emma: Please do. Now, about the analytics dashboard—what’s the status?
+Olivia: The charts are loading fine, but the filtering isn’t working as expected.
+Liam: I’ll debug that after lunch and update the issue ticket.
+Emma: Thank you. We also have the partner integration with FinBank due next week.
+Noah: Their API sandbox credentials were received yesterday. I’ll start testing the endpoints this afternoon.
+Emma: Excellent. Please document anything odd in Postman and share it.
+Sophia: Do we need to update the privacy policy due to this integration?
+Emma: Yes, good point. Let’s review the policy draft on Thursday.
+Liam: I’ll check with Legal and get their feedback by Wednesday.
+Olivia: Quick note—the UI team needs a response on the login screen animation concept.
+Emma: I saw it. Looks slick but feels heavy. Let’s simplify it.
+Noah: I can reduce frame size and re-export it in Lottie format.
+Emma: Perfect. Target for Friday?
+Noah: Yes, doable.
+Sophia: Also, we need to align on the Q3 hiring plan. The data team is understaffed.
+Emma: Let’s schedule a 1-hour planning session on Monday.
+Olivia: Can we invite HR to that call?
+Emma: Absolutely. Include Priya from HR.
+Liam: Oh, I almost forgot—Slack notifications for deployments aren’t triggering.
+Noah: I’ll check the webhook setup today.
+Emma: Thank you. Anything else?
+Sophia: Should we reschedule the product demo with TechNova? Their PM was on leave.
+Emma: Yes, move it to next Wednesday. Send a calendar update.
+Olivia: I’ll handle that.
+Emma: Lastly, reminder: performance reviews are due next Friday. Submit yours by EOD Tuesday.
+Noah: Got it.
+Liam: Acknowledged.
+Sophia: Noted.
+Olivia: Thanks, Emma.
