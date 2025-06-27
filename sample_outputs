@@ -1,67 +1,55 @@
 
---- SUMMARY BULLETS ---
-• CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery.
-• Please submit your best shots of New York for next week.
-• Visit CNN.com/Travel next Wednesday for a new gallery of snapshots.
+---
 
---- ACTION ITEMS ---
+### ✅ **3. Sample Input + Output**
 
---- NAMED ENTITIES ---
-[TIME] morning
-[TIME] last night
-[PERSON] Olivia
-[DATE] today
-[PERSON] Emma
-[DATE] tomorrow
-[PERSON] Noah
-[TIME] last night
-[TIME] noon
-[PERSON] Liam
-[PERSON] Noah
-[ORG] DevOps
-[PERSON] Emma
-[PERSON] Olivia
-[PERSON] Liam
-[PERSON] Emma
-[ORG] FinBank
-[DATE] next week
-[PERSON] Noah
-[DATE] yesterday
-[TIME] this afternoon
-[PERSON] Emma
-[LOC] Postman
-[PERSON] Emma
-[DATE] Thursday
-[PERSON] Liam
-[ORG] Legal
-[DATE] Wednesday
-[ORG] Olivia: Quick
-[ORG] UI
-[PERSON] Emma
-[PERSON] Noah
-[PERSON] Lottie
-[PERSON] Emma
-[ORG] Target
-[DATE] Friday
-[PERSON] Noah
-[PRODUCT] Q3
-[PERSON] Emma
-[TIME] 1-hour
-[DATE] Monday
-[PERSON] Olivia
-[PERSON] Emma
-[PERSON] Liam
-[PERSON] Noah
-[DATE] today
-[PERSON] Emma
-[PRODUCT] TechNova
-[PERSON] Emma
-[DATE] next Wednesday
-[PERSON] Olivia
-[PERSON] Emma
-[DATE] next Friday
-[ORG] EOD
-[DATE] Tuesday
-[PERSON] Noah
-[PERSON] Olivia
-[PERSON] Emma
+Save the long conversation I gave you into:
+
+📄 `sample_inputs/conversation_long.txt`
+
+Save the generated output (summary bullets, action items, named entities) into:
+
+📄 `sample_outputs/summary_long.md`
+
+I can generate this output for you if you'd like.
+
+---
+
+### ✅ **4. Final Report (1–2 Pages)**
+
+Create a PDF like this:
+
+#### **report.pdf (2 pages max)**
+
+```markdown
+# Dialogue Summarizer – DevifyX NLP Assignment
+
+## 🧠 Objective
+To build an NLP system that can summarize multi-speaker dialogues into key bullet points with action items and named entities.
+
+## 🔧 Core Pipeline
+- **Preprocessing:** Extract speaker-dialogue pairs
+- **Summarization:** Used BART (`facebook/bart-large-cnn`)
+- **Redundancy Filtering:** `sentence-transformers` similarity
+- **Named Entity Recognition:** spaCy NER
+- **Action Extraction:** Regex + optional zero-shot classifier
+- **UI:** Built with Streamlit
+- **Export:** Summary to PDF and Markdown
+
+## 💡 Challenges
+- Preserving speaker context during chunking
+- Handling conversational redundancy
+- Maintaining clarity and simplicity in summaries
+
+## ✅ Results
+- Summary quality: Short, relevant, and informative
+- Full functionality including bonus features
+- CLI and Web UI working as expected
+
+## 📦 Tools
+- Python, Hugging Face Transformers, spaCy, Streamlit, FPDF
+
+## 👨‍💻 AI Support Used
+- ChatGPT (for planning & code scaffolding)
+- Hugging Face Docs & Model Hub
+
