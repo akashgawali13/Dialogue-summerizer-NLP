@@ -1,0 +1,66 @@
+Dialogue Summarizer – Project Report
+
+# Objective
+
+The goal of this project is to design and implement an NLP-based system that can summarize multi-turn dialogues involving two or more speakers. The system should generate concise bullet points, identify actionable items, and extract key named entities to provide a quick overview of conversations.
+
+---
+
+# Approach
+
+# Pipeline Structure:
+
+1. Preprocessing**: Parse raw conversation transcripts and separate speaker turns.
+2. Summarization**: Apply `facebook/bart-large-cnn` transformer model for bullet-point summaries.
+3. Redundancy Removal**: Use Sentence-BERT (`all-MiniLM-L6-v2`) embeddings to filter overlapping points.
+4. Action Item Extraction**: Rule-based identification using modal verbs ("should", "must", etc.).
+5. NER: Named entity recognition via spaCy’s `en_core_web_sm` model.
+6. Export**: Summary + actions exported as PDF or Markdown.
+7. Interface**: Built using Streamlit for web-based input and display.
+
+# Models & Tools Used
+
+| Component           | Technology / Library             |
+| ------------------- | -------------------------------- |
+| Summarization       | Hugging Face Transformers (BART) |
+| Semantic Similarity | Sentence Transformers (MiniLM)   |
+| NER                 | spaCy (`en_core_web_sm`)         |
+| Interface           | Streamlit                        |
+| Export              | FPDF, Markdown                   |
+| Language Tools      | NLTK, regex                      |
+
+
+# Challenges Faced
+
+* **Redundancy**: Avoiding repeated points across multiple speaker turns.
+* **Chunking**: Summarizing long conversations while preserving context.
+* **Action Item Detection**: Balancing simplicity of regex vs power of classification.
+* **Deployment**: Ensuring Streamlit UI works smoothly with limited local compute.
+
+
+
+# Achievements
+
+* Implemented all required core features.
+* Completed 5 bonus features:
+
+  * Action item extraction
+  * Named entity recognition
+  * PDF/Markdown export
+  * Real-time summarization
+  * Multilingual support via optional mT5
+* Created Streamlit app for easy use.
+
+# Learnings
+
+* Practical use of large language models for summarization.
+* Integration of multiple NLP pipelines in a single product.
+* Best practices in UI design for NLP tools.
+
+
+# AI Tools Used
+
+* **ChatGPT**: Helped brainstorm structure, design pipeline and optimize code.
+* **Hugging Face Model Hub**: For sourcing BART and Sentence-BERT models.
+* **GitHub Copilot** (optional): For basic code completion and docstrings.
+
